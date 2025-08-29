@@ -12,7 +12,10 @@ import threading
 from functools import partial
 
 client = OpenAI()
-data_path = "new_question.jsonl"
+# --- MODIFICATION START: Updated data path ---
+# data_path = "new_question.jsonl" # Old path
+data_dir = "./data/clean" # New directory containing category JSON files
+# --- MODIFICATION END ---
 
 # Configuration
 NUM_EXPERIMENTS = 1  # Number of times to repeat the entire experiment
@@ -546,7 +549,7 @@ category_to_judge_prompt_map = {
 
 print(f"📁 Logging to directory: {log_dir}")
 
-def call_openai(messages, model="gpt-5", temperature=0.8):
+def call_openai(messages, model="gpt-4o", temperature=0.8):
     if model in ["gpt-5", "o4-mini", "o3-mini", "gpt-5-mini", "gpt-5-nano"]:
         response = client.responses.create(
             model="gpt-5",
@@ -568,9 +571,9 @@ def call_openai(messages, model="gpt-5", temperature=0.8):
             messages=messages,
             temperature=temperature
         )
-        response = response.choices[0].message.content.strip() 
+        response = response.choices[0].message.content.strip()
 
-    return response 
+    return response
 
 def safe_log_write(filename, log_entry):
     """Thread-safe logging function"""
@@ -710,9 +713,11 @@ def generate_mt_response(context_seed_question, turn_count, curr_question, sampl
         conversation_log.append({"user": context_seed_question, "assistant": response})
         last_interaction = {"user": context_seed_question, "assistant": response}
 
-        for turn in range(turn_count):
+        # NOTE: The loop generates `turn_count - 1` follow-ups because the first turn is the seed.
+        # To have a total of `turn_count` turns of context, we need `turn_count - 1` generated follow-ups.
+        for turn in range(turn_count - 1): 
             # get follow up question
-            follow_up_question = call_openai([{"role": "user", "content": f"Generate a natural follow-up question to the assistant’s last response that I can ask to keep the conversation going, and output only the question with no extra text or formatting. Be creative with your follow up and ask good and insightful quesitons that a human/person would actually ask. Here is the latest interaction: {last_interaction}"}], model="gpt-4.1-nano", temperature=0.9)
+            follow_up_question = call_openai([{"role": "user", "content": f"Generate a natural follow-up question to the assistant’s last response that I can ask to keep the conversation going, and output only the question with no extra text or formatting. Be creative with your follow up and ask good and insightful quesitons that a human/person would actually ask. Here is the latest interaction: {last_interaction}"}], model="gpt-4-turbo-preview", temperature=0.9)
 
             messages.append({"role": "user", "content": follow_up_question})
             response = call_openai(messages)
@@ -759,20 +764,27 @@ def process_single_sample(context_sample, curr_sample, exp_id, sample_id, contex
     Processes a single sample by generating a reference response and comparing it
     against contextual responses with varying numbers of turns.
     """
-    target_question = curr_sample["turns"][0] # seed question
+    # --- MODIFICATION START: Accessing data from new format ---
+    target_question = curr_sample["prompt"] # Use "prompt" key instead of "turns"[0]
+    # --- MODIFICATION END ---
     target_category = curr_sample["category"]
 
     # Generate reference response (no context)
     reference_response = generate_mt_response(None, 0, target_question, sample_id, exp_id, "reference")
 
+    # --- MODIFICATION START: Accessing data from new format ---
+    context_seed_question = context_sample["prompt"] # Use "prompt" key
+    # The first argument to generate_and_judge_single_response is a list of context turns.
+    # The original code took a slice of the turns list. Here, we just need the single seed
+    # question, so we wrap it in a list to match the expected format.
     context_configs = [
-        (context_sample["turns"][:1], f"{context_type}_1_turn", 1),
-        (context_sample["turns"][:3], f"{context_type}_3_turns", 3),
-        (context_sample["turns"][:6], f"{context_type}_6_turns", 6),
-        (context_sample["turns"][:9], f"{context_type}_9_turns", 9),
-        (context_sample["turns"][:12], f"{context_type}_12_turns", 12),
+        ([context_seed_question], f"{context_type}_1_turn", 1),
+        ([context_seed_question], f"{context_type}_3_turns", 3),
+        ([context_seed_question], f"{context_type}_6_turns", 6),
+        ([context_seed_question], f"{context_type}_9_turns", 9),
+        ([context_seed_question], f"{context_type}_12_turns", 12),
     ]
-
+    # --- MODIFICATION END ---
 
     results = {}
     with concurrent.futures.ThreadPoolExecutor(max_workers=5) as executor:
@@ -822,7 +834,8 @@ def process_sample_with_both_contexts(sample_idx, sample, data, exp_id):
     """Processes a single sample with both same and different category contexts."""
     current_category = sample['category']
     
-    same_category_samples = [s for s in data if s['category'] == current_category and s != sample]
+    # Ensure the chosen context is not the sample itself
+    same_category_samples = [s for i, s in enumerate(data) if s['category'] == current_category and i != sample_idx]
     diff_category_samples = [s for s in data if s['category'] != current_category]
     
     if not same_category_samples or not diff_category_samples:
@@ -836,9 +849,36 @@ def process_sample_with_both_contexts(sample_idx, sample, data, exp_id):
     
     return same_category_result, diff_category_result
 
-def read_jsonl(file_path):
-    with open(file_path, 'r', encoding='utf-8') as file:
-        return [json.loads(line) for line in file.readlines()]
+# --- MODIFICATION START: New data loading function ---
+def load_data_from_directory(directory_path):
+    """Loads all .json files from a directory, adding the category from the filename."""
+    all_samples = []
+    if not os.path.exists(directory_path):
+        print(f"Error: Directory '{directory_path}' not found.")
+        return []
+        
+    for filename in os.listdir(directory_path):
+        if filename.endswith(".json"):
+            category = filename.replace(".json", "")
+            file_path = os.path.join(directory_path, filename)
+            try:
+                with open(file_path, 'r', encoding='utf-8') as f:
+                    items = json.load(f)
+                    for item in items:
+                        item['category'] = category
+                        all_samples.append(item)
+            except json.JSONDecodeError:
+                print(f"Warning: Could not decode JSON from {filename}. Skipping.")
+            except Exception as e:
+                print(f"Error reading {filename}: {e}. Skipping.")
+    return all_samples
+
+# This function is no longer needed
+# def read_jsonl(file_path):
+#     with open(file_path, 'r', encoding='utf-8') as file:
+#         return [json.loads(line) for line in file.readlines()]
+# --- MODIFICATION END ---
+
 
 def run_single_experiment(data, exp_id):
     """Runs a single experiment, collecting detailed results."""
@@ -882,137 +922,142 @@ def run_single_experiment(data, exp_id):
     return all_results
 
 # --- Main Execution ---
-data = read_jsonl(data_path)
-distribution = {cat: sum(1 for s in data if s['category'] == cat) for cat in set(s['category'] for s in data)}
+# --- MODIFICATION START: Call new data loading function ---
+data = load_data_from_directory(data_dir)
+# --- MODIFICATION END ---
 
-print("Distribution:", distribution)
-print(f"Running {NUM_EXPERIMENTS} experiments with {len(data)} samples each")
-print(f"Using {MAX_WORKERS} parallel workers")
-# 1 ref gen + (5 context gen + 5 judge calls) per context type = 1 + 10 + 10 = 21
-print(f"Total API calls will be approximately: {len(data) * 21 * NUM_EXPERIMENTS}")
+if not data:
+    print("No data loaded. Exiting.")
+else:
+    distribution = {cat: sum(1 for s in data if s['category'] == cat) for cat in set(s['category'] for s in data)}
 
-# Run all experiments and collect raw results
-all_exp_raw_results = []
-for exp_id in range(NUM_EXPERIMENTS):
-    exp_results = run_single_experiment(data, exp_id)
-    print(exp_results)
-    all_exp_raw_results.extend(exp_results)
+    print("Distribution:", distribution)
+    print(f"Running {NUM_EXPERIMENTS} experiments with {len(data)} samples each")
+    print(f"Using {MAX_WORKERS} parallel workers")
+    # 1 ref gen + (5 context gen + 5 judge calls) per context type = 1 + 10 + 10 = 21
+    print(f"Total API calls will be approximately: {len(data) * 21 * NUM_EXPERIMENTS}")
 
-# --- Final Aggregation and Reporting ---
-print("\n📊 Calculating final statistics across all experiments...")
+    # Run all experiments and collect raw results
+    all_exp_raw_results = []
+    for exp_id in range(NUM_EXPERIMENTS):
+        exp_results = run_single_experiment(data, exp_id)
+        all_exp_raw_results.extend(exp_results)
 
-final_results = {}
-turn_keys = ["1_turn", "3_turns", "6_turns", "9_turns", "12_turns"]
+    # --- Final Aggregation and Reporting ---
+    print("\n📊 Calculating final statistics across all experiments...")
 
-# Initialize structure
-for context_type in ["same_category", "different_category"]:
-    final_results[context_type] = defaultdict(lambda: {
-        "preference_scores": {turn: [] for turn in turn_keys},
-        "dimensional_scores": {
-            "reference": {turn: defaultdict(list) for turn in turn_keys},
-            "context": {turn: defaultdict(list) for turn in turn_keys}
-        }
-    })
+    final_results = {}
+    turn_keys = ["1_turn", "3_turns", "6_turns", "9_turns", "12_turns"]
 
-# Populate with data from all experiments
-for res in all_exp_raw_results:
-    context_type = res['context_type']
-    category = res['target_category']
-    
-    for turn_key, judgement in res['results'].items():
-        if turn_key in turn_keys:
-            # Aggregate preference scores (0/1/2)
-            final_results[context_type][category]["preference_scores"][turn_key].append(judgement.get('choice', 0))
-            
-            # Aggregate dimensional scores from independent evals
-            ref_scores = judgement.get('reference_scores', {}) or {}
-            context_scores = judgement.get('context_scores', {}) or {}
-
-            for dim, score in ref_scores.items():
-                if dim != "domain" and isinstance(score, (int, float)):
-                    final_results[context_type][category]["dimensional_scores"]["reference"][turn_key][dim].append(score)
-
-            for dim, score in context_scores.items():
-                if dim != "domain" and isinstance(score, (int, float)):
-                    final_results[context_type][category]["dimensional_scores"]["context"][turn_key][dim].append(score)
-
-# Calculate final statistics
-final_stats = {}
-for context_type, categories in final_results.items():
-    final_stats[context_type] = {}
-    for category, data in categories.items():
-        final_stats[context_type][category] = {
-            "preference_stats": {},
-            "dimensional_stats": {
-                "reference": {turn: {} for turn in turn_keys},
-                "context": {turn: {} for turn in turn_keys}
+    # Initialize structure
+    for context_type in ["same_category", "different_category"]:
+        final_results[context_type] = defaultdict(lambda: {
+            "preference_scores": {turn: [] for turn in turn_keys},
+            "dimensional_scores": {
+                "reference": {turn: defaultdict(list) for turn in turn_keys},
+                "context": {turn: defaultdict(list) for turn in turn_keys}
             }
-        }
-        # Calculate preference stats
-        for turn_key, scores in data['preference_scores'].items():
-            final_stats[context_type][category]["preference_stats"][turn_key] = calculate_preference_stats(scores)
-        
-        # Calculate dimensional stats (averages)
-        for model_type in ["reference", "context"]:
-            for turn_key, dims in data['dimensional_scores'][model_type].items():
-                for dim, scores in dims.items():
-                    avg_score = np.mean(scores) if scores else 0
-                    final_stats[context_type][category]["dimensional_stats"][model_type][turn_key][dim] = round(avg_score, 3)
+        })
 
-# --- Print Final Report ---
-for context_type, stats_by_cat in final_stats.items():
-    print(f"\n\n{'='*35} {context_type.replace('_', ' ').upper()} CONTEXT RESULTS {'='*35}")
-    for category, cat_stats in sorted(stats_by_cat.items()):
+    # Populate with data from all experiments
+    for res in all_exp_raw_results:
+        context_type = res['context_type']
+        category = res['target_category']
         
-        # --- Preference Report ---
-        print(f"\n📂 Category: {category} - Preference Report")
-        print(f"{'Turn':<12} {'Context %':<10} {'Ref %':<10} {'Tie %':<10} {'C/R/T':<12} {'Total':<8}")
-        print("-" * 65)
-        for turn_key in turn_keys:
-            s = cat_stats["preference_stats"].get(turn_key, {})
-            if s:
-                counts_str = f"{s.get('context_wins',0)}/{s.get('reference_wins',0)}/{s.get('ties',0)}"
-                print(f"{turn_key:<12} {s.get('context_preference_rate',0):<10.3f} {s.get('reference_preference_rate',0):<10.3f} {s.get('tie_rate',0):<10.3f} {counts_str:<12} {s.get('total_comparisons',0):<8}")
+        for turn_key, judgement in res['results'].items():
+            if turn_key in turn_keys:
+                # Aggregate preference scores (0/1/2)
+                final_results[context_type][category]["preference_scores"][turn_key].append(judgement.get('choice', 0))
+                
+                # Aggregate dimensional scores from independent evals
+                ref_scores = judgement.get('reference_scores', {}) or {}
+                context_scores = judgement.get('context_scores', {}) or {}
 
-        # --- Dimensional Score Report ---
-        print(f"\n📂 Category: {category} - Dimensional Score Report (Avg Score 1-5)")
-        dim_stats = cat_stats.get("dimensional_stats", {})
-        
-        # Get all unique dimension names for header
-        all_dims = set()
-        if dim_stats.get("context", {}).get("1_turn", {}):
-            all_dims.update(dim_stats["context"]["1_turn"].keys())
-        
-        if not all_dims: continue
-        
-        header = f"{'Turn':<12} {'Model':<12}" + "".join([f"{dim[:12]:<15}" for dim in sorted(list(all_dims))])
-        print(header)
-        print("-" * len(header))
-        
-        for turn_key in turn_keys:
-            for model_type in ["Reference", "Context"]:
-                row = f"{turn_key:<12} {model_type:<12}"
-                model_data = dim_stats.get(model_type.lower(), {}).get(turn_key, {})
-                for dim in sorted(list(all_dims)):
-                    avg_score = model_data.get(dim, 0.0)
-                    row += f"{avg_score:<15.3f}"
-                print(row)
-            if turn_key != turn_keys[-1]: print("." * len(header)) # Separator line
+                for dim, score in ref_scores.items():
+                    if dim != "domain" and isinstance(score, (int, float)):
+                        final_results[context_type][category]["dimensional_scores"]["reference"][turn_key][dim].append(score)
+
+                for dim, score in context_scores.items():
+                    if dim != "domain" and isinstance(score, (int, float)):
+                        final_results[context_type][category]["dimensional_scores"]["context"][turn_key][dim].append(score)
+
+    # Calculate final statistics
+    final_stats = {}
+    for context_type, categories in final_results.items():
+        final_stats[context_type] = {}
+        for category, data in categories.items():
+            final_stats[context_type][category] = {
+                "preference_stats": {},
+                "dimensional_stats": {
+                    "reference": {turn: {} for turn in turn_keys},
+                    "context": {turn: {} for turn in turn_keys}
+                }
+            }
+            # Calculate preference stats
+            for turn_key, scores in data['preference_scores'].items():
+                final_stats[context_type][category]["preference_stats"][turn_key] = calculate_preference_stats(scores)
+            
+            # Calculate dimensional stats (averages)
+            for model_type in ["reference", "context"]:
+                for turn_key, dims in data['dimensional_scores'][model_type].items():
+                    for dim, scores in dims.items():
+                        avg_score = np.mean(scores) if scores else 0
+                        final_stats[context_type][category]["dimensional_stats"][model_type][turn_key][dim] = round(avg_score, 3)
+
+    # --- Print Final Report ---
+    for context_type, stats_by_cat in final_stats.items():
+        print(f"\n\n{'='*35} {context_type.replace('_', ' ').upper()} CONTEXT RESULTS {'='*35}")
+        for category, cat_stats in sorted(stats_by_cat.items()):
+            
+            # --- Preference Report ---
+            print(f"\n📂 Category: {category} - Preference Report")
+            print(f"{'Turn':<12} {'Context %':<10} {'Ref %':<10} {'Tie %':<10} {'C/R/T':<12} {'Total':<8}")
+            print("-" * 65)
+            for turn_key in turn_keys:
+                s = cat_stats["preference_stats"].get(turn_key, {})
+                if s:
+                    counts_str = f"{s.get('context_wins',0)}/{s.get('reference_wins',0)}/{s.get('ties',0)}"
+                    print(f"{turn_key:<12} {s.get('context_preference_rate',0):<10.3f} {s.get('reference_preference_rate',0):<10.3f} {s.get('tie_rate',0):<10.3f} {counts_str:<12} {s.get('total_comparisons',0):<8}")
+
+            # --- Dimensional Score Report ---
+            print(f"\n📂 Category: {category} - Dimensional Score Report (Avg Score 1-5)")
+            dim_stats = cat_stats.get("dimensional_stats", {})
+            
+            # Get all unique dimension names for header
+            all_dims = set()
+            if dim_stats.get("context", {}).get("1_turn", {}):
+                all_dims.update(dim_stats["context"]["1_turn"].keys())
+            
+            if not all_dims: continue
+            
+            header = f"{'Turn':<12} {'Model':<12}" + "".join([f"{dim[:12]:<15}" for dim in sorted(list(all_dims))])
+            print(header)
+            print("-" * len(header))
+            
+            for turn_key in turn_keys:
+                for model_type in ["Reference", "Context"]:
+                    row = f"{turn_key:<12} {model_type:<12}"
+                    model_data = dim_stats.get(model_type.lower(), {}).get(turn_key, {})
+                    for dim in sorted(list(all_dims)):
+                        avg_score = model_data.get(dim, 0.0)
+                        row += f"{avg_score:<15.3f}"
+                    print(row)
+                if turn_key != turn_keys[-1]: print("." * len(header)) # Separator line
 
 
-# Save final combined results to a JSON file
-output_data = {
-    "experiment_config": {
-        "num_experiments": NUM_EXPERIMENTS,
-        "num_samples_per_experiment": len(data),
-    },
-    "final_statistics": final_stats,
-    "dataset_distribution": distribution
-}
+    # Save final combined results to a JSON file
+    output_data = {
+        "experiment_config": {
+            "num_experiments": NUM_EXPERIMENTS,
+            "num_samples_per_experiment": len(data),
+        },
+        "final_statistics": final_stats,
+        "dataset_distribution": distribution
+    }
 
-with open("combined_results.json", 'w', encoding='utf-8') as file:
-    json.dump(output_data, file, ensure_ascii=False, indent=2)
+    with open("combined_results.json", 'w', encoding='utf-8') as file:
+        json.dump(output_data, file, ensure_ascii=False, indent=2)
 
-print(f"\n\n💾 Final aggregated results saved to: combined_results.json")
-print(f"📁 Raw logs for debugging are in the directory: {log_dir}/")
-print("\n🎯 Experiment completed!")
+    print(f"\n\n💾 Final aggregated results saved to: combined_results.json")
+    print(f"📁 Raw logs for debugging are in the directory: {log_dir}/")
+    print("\n🎯 Experiment completed!")
