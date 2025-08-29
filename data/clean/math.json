@@ -1,0 +1,452 @@
+[
+  {
+    "prompt": "Multiply -22 and 0.49597.",
+    "answer": "-10.91134",
+    "meta_data": {
+      "category": "arithmetic",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Calculate 1000804 divided by -500402.",
+    "answer": "-2",
+    "meta_data": {
+      "category": "arithmetic",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Evaluate 113/((-332785)/570)*(-1)/(-2), please return the calculation result in its simplest fraction form.",
+    "answer": "-3/31",
+    "meta_data": {
+      "category": "arithmetic",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "5+6=",
+    "answer": "11",
+    "meta_data": {
+      "category": "arithmetic",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "4+3=",
+    "answer": "7",
+    "meta_data": {
+      "category": "arithmetic",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What is -0.2 + 10156627591?",
+    "answer": "10156627590.8",
+    "meta_data": {
+      "category": "arithmetic",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "8+56=",
+    "answer": "64",
+    "meta_data": {
+      "category": "arithmetic",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Sum 0 and -700981.3438.",
+    "answer": "-700981.3438",
+    "meta_data": {
+      "category": "arithmetic",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What is (-41 - -2) + 30 + 56?",
+    "answer": "47",
+    "meta_data": {
+      "category": "arithmetic",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Product of -1.2 and 36587.",
+    "answer": "-43904.4",
+    "meta_data": {
+      "category": "arithmetic",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "In U.S. measurements, how many ounces are equivalent to one pound?",
+    "answer": "D",
+    "meta_data": {
+      "category": "primary",
+      "topic": "Primary--Comprehensive Application--Unit Conversion",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Jim spends 18 hours watching TV and then decides to go to bed and reads for half as long. He does this 27 times a week. How many hours does he spend on TV and reading in 36 weeks?",
+    "answer": "26244",
+    "meta_data": {
+      "category": "primary",
+      "topic": "Primary--Introduction to Numbers and Algebra--Ratios and Proportions",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Mia and Emma are currently 112 years apart in age. If Mia, who is younger than Emma, is 280 years old, what's the average of their ages?",
+    "answer": "336",
+    "meta_data": {
+      "category": "primary",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Dijana and Anis live near a lake, and every weekend they go out rowing into the lake. On a Sunday morning, both went out rowing, and Dijana rowed for 150 miles the whole day. Anis rowed 3/5 times more miles than Dijana. Calculate the total distance the two of them rowed on that day.",
+    "answer": "240",
+    "meta_data": {
+      "category": "primary",
+      "topic": "Primary--Comprehensive Application--Typical Application Problems",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What properties of multiplication do this equation reflect: $a\\cdot 1=a$, when $a\\neq 0$",
+    "answer": "C",
+    "meta_data": {
+      "category": "primary",
+      "topic": "Primary--Introduction to Numbers and Algebra--Basic Concepts of Equations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Royce takes 320 minutes more than double Rob to shingle a house. If Rob takes 16 hours, how many minutes does Royce take?",
+    "answer": "2240",
+    "meta_data": {
+      "category": "primary",
+      "topic": "Primary--Introduction to Numbers and Algebra--Basic Concepts of Equations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "In the International System of Units, the abbreviation \"mm\" stands for the unit of length known as?",
+    "answer": "A",
+    "meta_data": {
+      "category": "primary",
+      "topic": "Primary--Comprehensive Application--Unit Conversion",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "In U.S. measurement, the abbreviation \"in.\" stands for the unit of length known as ?",
+    "answer": "C",
+    "meta_data": {
+      "category": "primary",
+      "topic": "Primary--Comprehensive Application--Typical Application Problems",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Leah just got a new kitten. Spaying her cost $1000, her 15 vaccines costs $100 each, and the kitten broke 20 vases that cost $60 each. How much has the kitten cost so far?",
+    "answer": "3700",
+    "meta_data": {
+      "category": "primary",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Liam is 96 years old now. Two years ago, Liam’s age was twice the age of Vince. How old is Vince now?",
+    "answer": "49",
+    "meta_data": {
+      "category": "primary",
+      "topic": "Primary--Introduction to Numbers and Algebra--Four Operations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What is the value of the expression  $\\frac{1 \\cdot 2 \\cdot 3 \\cdot 4 \\cdot 5 \\cdot 6 \\cdot 7 \\cdot 8}{1+2+3+4+5+6+7+8}$ ?",
+    "answer": "B",
+    "meta_data": {
+      "category": "middle",
+      "topic": "Middle--Basic Numbers and Algebra--Real Numbers",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Eleven members of the Middle School Math Club each paid the same amount for a guest speaker to talk about problem solving at their math club meeting. They paid their guest speaker  $\\$\\underline{1} \\underline{A} \\underline{2}$ . What is the missing digit  $A$ of this  $3$ -digit number?",
+    "answer": "C",
+    "meta_data": {
+      "category": "middle",
+      "topic": "Middle--Basic Numbers and Algebra--Real Numbers",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "A square-shaped floor is covered with congruent square tiles. If the total number of tiles that lie on the two diagonals is 37, how many tiles cover the floor?",
+    "answer": "C",
+    "meta_data": {
+      "category": "middle",
+      "topic": "Middle--Basic Geometry--Basic Concepts of Geometry",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Jefferson Middle School has the same number of boys and girls.  $\\frac{3}{4}$ of the girls and  $\\frac{2}{3}$ \nof the boys went on a field trip. What fraction of the students on the field trip were girls?",
+    "answer": "D",
+    "meta_data": {
+      "category": "middle",
+      "topic": "Middle--Basic Numbers and Algebra--Fractions",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "In general, what is an algebraic expression of the form $\\sqrt{a} (a \\ge 0)$ called?",
+    "answer": "B",
+    "meta_data": {
+      "category": "middle",
+      "topic": "Middle--Basic Numbers and Algebra--Real Numbers",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "When the coefficients of the same variable are opposite or equal in two equations, adding or subtracting the two sides of the two equations respectively can eliminate this variable. This method is called <<<Answer>>>, known for short as the method of addition and subtraction.",
+    "answer": "B",
+    "meta_data": {
+      "category": "middle",
+      "topic": "Middle--Basic Numbers and Algebra--Linear Equations in Two Variables",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What is pythagorean theorem in any right triangle, if a and b are the lengths of the legs and c is the length of the hypotenuse?",
+    "answer": "A",
+    "meta_data": {
+      "category": "middle",
+      "topic": "Middle--Basic Geometry--Basics of Triangles",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "In a plane, what is formed by two mutually perpendicular number axes with a common origin?",
+    "answer": "D",
+    "meta_data": {
+      "category": "middle",
+      "topic": "Middle--Basic Geometry--Basic Concepts of Geometry",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What is the survey method that examines all members of the population called?",
+    "answer": "A",
+    "meta_data": {
+      "category": "middle",
+      "topic": "Middle--Basic Probability and Statistics--Data Collection and Organization",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "How to multiply and divide in scientific notation?",
+    "answer": "D",
+    "meta_data": {
+      "category": "middle",
+      "topic": "Middle--Basic Numbers and Algebra--Real Numbers",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What is the distance formula between two points?",
+    "answer": "D",
+    "meta_data": {
+      "category": "high",
+      "topic": "High--Intermediate Geometry--Equations of Lines and Circles",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "For a hyperbola with foci on the y-axis, what is the equation of the directrix?",
+    "answer": "B",
+    "meta_data": {
+      "category": "high",
+      "topic": "High--Intermediate Geometry--Equations of Conic Sections",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What is the formula of Pythagorean Theorem?",
+    "answer": "D",
+    "meta_data": {
+      "category": "high",
+      "topic": "High--Intermediate Geometry--Trigonometric Functions and Solving Triangles",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What is the definition of probability?",
+    "answer": "C",
+    "meta_data": {
+      "category": "high",
+      "topic": "High--Intermediate Probability and Statistics--Foundations of Probability Theory",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Suppose that  $a$ ,  $b$ ,  $c$ and  $d$ are positive integers satisfying all of the following relations.\n\n $abcd=2^6\\cdot 3^9\\cdot 5^7$ \n $\\text{lcm}(a,b)=2^3\\cdot 3^2\\cdot 5^3$ \n $\\text{lcm}(a,c)=2^3\\cdot 3^3\\cdot 5^3$ \n $\\text{lcm}(a,d)=2^3\\cdot 3^3\\cdot 5^3$ \n $\\text{lcm}(b,c)=2^1\\cdot 3^3\\cdot 5^2$ \n $\\text{lcm}(b,d)=2^2\\cdot 3^3\\cdot 5^2$ \n $\\text{lcm}(c,d)=2^2\\cdot 3^3\\cdot 5^2$ \n\nWhat is  $\\text{gcd}(a,b,c,d)$ ?",
+    "answer": "B",
+    "meta_data": {
+      "category": "high",
+      "topic": "High--Intermediate Numbers and Algebra--Sets and Common Logical Terms",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "For two sets A and B, if any element of set A is also an element of set B, then set A is called a?",
+    "answer": "C",
+    "meta_data": {
+      "category": "high",
+      "topic": "High--Intermediate Numbers and Algebra--Sets and Common Logical Terms",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "If the elements forming two sets are the same, then these two sets can be called?",
+    "answer": "B",
+    "meta_data": {
+      "category": "high",
+      "topic": "High--Intermediate Geometry--Trigonometric Functions and Solving Triangles",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "If the edge of a regular tetrahedron has a length of a, then what is the radius of its inscribed sphere?",
+    "answer": "A",
+    "meta_data": {
+      "category": "high",
+      "topic": "High--Intermediate Geometry--Solid Geometry",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "For a hyperbola with its focal points on the x-axis, what is the equation of its asymptotes?",
+    "answer": "C",
+    "meta_data": {
+      "category": "high",
+      "topic": "High--Intermediate Geometry--Equations of Conic Sections",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "In the state of Coinland, coins have values  $6,10,$ and  $15$ cents. Suppose  $x$ is the value in cents of the most expensive item in Coinland that cannot be purchased using these coins with exact change. What is the sum of the digits of  $x?$",
+    "answer": "A",
+    "meta_data": {
+      "category": "high",
+      "topic": "High--Intermediate Numbers and Algebra--Applications of Inequalities",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "6.3-5. Let $Y_1 < Y_2 < \\cdots < Y_8$ be the order statistics of eight independent observations from a continuous-type distribution with 70 th percentile $\\pi_{0.7}=27.3$.\r\n(a) Determine $P\\left(Y_7<27.3\\right)$.",
+    "answer": "C",
+    "meta_data": {
+      "category": "college",
+      "topic": "College--Probability and Statistics--Distribution of Random Variables",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "If the functions $u=\\varphi(t)$ and $v=$ $\\psi(t)$ are both derivable at point $t$, and the function $z=f(u, v)$ has continuous partial derivatives at the corresponding point $(u, v)$, then the composite function $z=f[\\varphi(t), \\psi(t)]$ is derivable at point $t$, and it follows that\n<<<Answer>>>",
+    "answer": "D",
+    "meta_data": {
+      "category": "college",
+      "topic": "College--Advanced Mathematics--Differential Calculus of Multivariable Functions",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "If a series circuit has a capacitor of $C=0.8 \\times 10^{-6} \\mathrm{~F}$ and an inductor of $L=0.2 \\mathrm{H}$, find the resistance $R$ so that the circuit is critically damped.",
+    "answer": "B",
+    "meta_data": {
+      "category": "college",
+      "topic": "College--Advanced Mathematics--Ordinary Differential Equations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "6.I-I. One characteristic of a car's storage console that is checked by the manufacturer is the time in seconds that it takes for the lower storage compartment door to open completely. A random sample of size $n=5$ yielded the following times:\r\n$\\begin{array}{lllll}1.1 & 0.9 & 1.4 & 1.1 & 1.0\\end{array}$\r\n(a) Find the sample mean, $\\bar{x}$.",
+    "answer": "C",
+    "meta_data": {
+      "category": "college",
+      "topic": "College--Probability and Statistics--Numerical Characteristics of Random Variables",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What is the relationship between the rank of matrix $\\boldsymbol{A}+\\boldsymbol{B}$ and the ranks of matrices $\\boldsymbol{A}$ and $\\boldsymbol{B}$?",
+    "answer": "C",
+    "meta_data": {
+      "category": "college",
+      "topic": "College--Linear Algebra--Matrices",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "What is the relationship between the eigenvalues of a matrix and the trace and determinant of the matrix?",
+    "answer": "D",
+    "meta_data": {
+      "category": "college",
+      "topic": "College--Linear Algebra--Eigenvalues and Eigenvectors",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Given a function $f(x, y)$ with domain $D, P_{0}(x_{0}, y_{0})$ is an interior point of $D$. If there exists a neighborhood $U(P_{0}) \\subseteq D$ around $P_{0}$ such that for any point $(x, y)$ different from $P_{0}$ within the neighborhood, it holds that $f(x, y)>f(x_{0}, y_{0})$, then the function $f(x, y)$ is said to have what at the point $(x_{0}, y_{0})$? $f(x_{0}, y_{0})$",
+    "answer": "A",
+    "meta_data": {
+      "category": "college",
+      "topic": "College--Advanced Mathematics--Differential Calculus of Multivariable Functions",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "If $\\boldsymbol{\\eta}_{1}$ and $\\boldsymbol{\\eta}_{2}$ are both solutions to the nonhomogeneous linear equation system $\\boldsymbol{A x}=\\boldsymbol{b}$, then is their difference $\\boldsymbol{\\eta}_{1}-\\boldsymbol{\\eta}_{2}$ a solution to the corresponding homogeneous linear equation system $\\boldsymbol{A x}=\\mathbf{0}$?",
+    "answer": "D",
+    "meta_data": {
+      "category": "college",
+      "topic": "College--Linear Algebra--Systems of Linear Equations",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "Is a nonzero vector $\\boldsymbol{\\alpha}$ linearly independent?",
+    "answer": "C",
+    "meta_data": {
+      "category": "college",
+      "topic": "College--Linear Algebra--Vectors",
+      "source": "mathbench"
+    }
+  },
+  {
+    "prompt": "If three three-dimensional vectors $\\boldsymbol{\\alpha}_{1}, \\boldsymbol{\\alpha}_{2}, \\boldsymbol{\\alpha}_{3}$ are linearly dependent, what geometric relationship do they have?",
+    "answer": "B",
+    "meta_data": {
+      "category": "college",
+      "topic": "College--Linear Algebra--Vectors",
+      "source": "mathbench"
+    }
+  }
+]

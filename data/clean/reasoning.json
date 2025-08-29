@@ -1,0 +1,601 @@
+[
+  {
+    "prompt": "Researchers in one country have reported that they have found meteorites from about 200 million years ago in strata in a certain area, and they are likely to be traces of flying debris when a giant meteorite hit what is now Quebec, Canada. The clay layer, which is about 5 centimeters thick, also contains high concentrations of elements such as iridium and platinum, which are 50 to 2000 times higher than those normally found on the earth's surface. In addition, this rock also contains special minerals in the strata at the end of the Baikui period. Since the strata also contain marine plankton fossils, it can be determined that the impact period was about 215 million years ago.\nQuestion: Which of the followings, if true, can best support the above findings?\nA. The rocks in this area were formed after the accumulation layer of the deep sea floor was exposed to the surface in ancient times\nB. Mass extinction of ammonites and other species in the late Paleozoic Triassic (about 200 to 237 million years ago)\nC. Elements such as iridium and platinum are unique to meteorites and are usually present in trace amounts on the surface\nD. In ancient times, there were a number of meteorites hitting the earth\n",
+    "answer": "C",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "In a few recent cases, some teenagers with advanced programming abilities used a new programming language, FANTOD, to hack into ETS and change their own SAT scores. All of the teenagers convicted of this crime were highly skilled in programming FANTOD. In light of these cases, some colleges have discounted the official SAT scores of applicants with a knowledge of FANTOD, and have required them to take special admission tests in supervised conditions on their own campuses.\nQuestion: Which of following conclusions can most properly be drawn from the information above?\nA. Students who learn FANTOD tend to have much lower SAT scores than do their peers.\nB. Most people who learn to program in FANTOD do so to commit some kind of hacking.\nC. The college admissions process possibly places some students with a knowledge of FANTOD at a disadvantage.\nD. Colleges should rely on their own admissions tests instead of the SATs\n",
+    "answer": "C",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "In countries in which new life-sustaining drugs cannot be patented, such drugs are sold at widely affordable prices; those same drugs, where patented, command premium prices because the patents shield patent-holding manufacturers from competitors. These facts show that future access to new life-sustaining drugs can be improved if the practice of granting patents on newly developed life-sustaining drugs were to be abolished everywhere.\nQuestion: Which of the following, if true, most seriously weakens the argument?\nA. In some countries specific processes for the manufacture of pharmaceutical drugs can be patented even in cases in which the drugs themselves cannot be patented.\nB. Countries that grant patents on life-sustaining drugs almost always ban their importation from countries that do not grant such patents.\nC. Countries that do not currently grant patents on life-sustaining drugs are, for the most part, countries with large populations.\nD. Pharmaceutical companies can afford the research that goes into the development of new drugs only if patents allow them to earn high profits.\n",
+    "answer": "D",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Supply side structural reform refers to the reform that starts from the supply side and aims at structural problems. supply side includes two basic aspects: one is the input of production factors, such as labor input, capital input, land and other resources input, entrepreneur talent input and government management input; the other is the improvement of total factor productivity, which is determined by system reform, structural optimization and factor upgrading. It mainly includes industrial structure, consumption structure, regional structure, factor input structure, emission structure, growth power structure, income distribution structure, etc.\nQuestion: According to the above, which of the followings is not within the scope of supply side structural reform?\nA. A platform integrates fragmented idle private cars for sharing\nB. A snack shop made snacks more exquisite and delicious by upgrading pastry technology\nC. A company adheres to independent innovation and develops patented high-tech intelligent terminal products\nD. A winery invested heavily in advertising and won the naming right of a popular variety show\n",
+    "answer": "D",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Ditalgame Corporation' s computer video games are subject to widespread illegal copying. To combat this piracy, Ditalgame will begin using a new copy protection feature on its games. Ditalgame' s president predicts a substantial increase in sales of the company' s games once the new copy protection feature is implemented.\nQuestion: Which one of the following, if true, provides the most support for the president's prediction?\nA. Over the last several years, the market for computer games has grown steadily, but Ditalgame's share of that market has shrunk considerably.\nB. Game Review Monthly, the most commonly read magazine among people who frequently copy computer games, generally gives favorable reviews to Ditalgame games.\nC. The copy protection feature causes a copied game to be playable just long enough for most people to come to enjoy it so much that they decide they have to have it.\nD. Ditalgame has spent millions of dollars developing the new copy protection feature, and the company can recoup these costs only if its sales increase substantially.\n",
+    "answer": "C",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "There is an advertisement in CCTV's Global Information list: every day, we only introduce you to three global hot people; only report the most important global events; only select the top five companies in the world; only release the latest financial news in the world;  only introduce the most imaginative cutting-edge technologies;-- Global Information list, CCTV Economic Channel, 12:00 every day. Know that the messenger survives.\nQuestion: Which of the following options is the most accurate understanding of know that the messenger survives in this passage?\nA. Its creativity comes from only paranoia can survive and paranoia is no longer synonymous with irrationality.\nB. In the original words, paranoia refers to people who dare to think, dare to do, dare to fight, dare to love, dare to hate, and dare to innovate.\nC. It is sensational at first, but when I think about it carefully, I feel that it is exquisite and proper.\nD. The taste of the whole program has risen to a level: providing information and focusing on survival.\n",
+    "answer": "D",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Sociologist: The claim that there is a large number of violent crimes in our society is false, for this claim is based upon the large number of stories in newspapers about violent crimes. But since violent crimes are very rare occurrences, newspapers are likely to print stories about them.\nQuestion: The sociologist's argument is flawed because it\nA. mistakes a property of each member of a group taken as an individual for a property of the group taken as a whole\nB. assumes without warrant that the newspaper stories in question are not biased\nC. presupposes that most newspaper stories are about violent crime\nD. presupposes the truth of the conclusion it is attempting to establish\n",
+    "answer": "D",
+    "meta_data": {
+      "category": {},
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "There is serious racial discrimination in the United States. Whites are in the upper class and look down on people of color. Blacks are suffering from discrimination in terms of education and job hunting, and they continue to hold demonstrations to fight for equal social status.\nQuestion: So what can we know from above?\nA. The United States is a country with a strict hierarchy\nB. There exist serious human rights problems in the United States\nC. Blacks are a violent group\nD. Blacks have a relatively low status in the world\n",
+    "answer": "B",
+    "meta_data": {
+      "category": {
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Mr. Zhang, Mr. Wang, Mr. Li and Mr. Zhao are driver, professor, doctor and worker. It is known that: (1) Mr. Zhang is taller than the professor; (2) Mr. Li is shorter than Mr. Wang; (3) The worker is taller than the driver; (4) The doctor is shorter than the professor; (5) The worker is either Mr. Zhao or Mr. Li.\nQuestion: According to the above information, which of the followings can be inferred?\nA. All the four people's occupations can be determined.\nB. Only three people's occupations can be determined.\nC. Only two people's occupations can be determined.\nD. Only one person's occupation can be determined.\n",
+    "answer": "A",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Disjunctive Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Ability trap means that people always like to do things that are good at and can bring self-confidence and satisfaction, which leads to the strengthening of a single ability and the weakening of other abilities, which makes it difficult to adapt to the new requirements of social changes.\nQuestion: Which of the following options belongs to the ability trap?\nA. Xiao Li taught in a university after graduating from his doctorate and became an associate professor in less than five years. In the past two years, he has become busier and busier in his work and achieved more and more results, so he has no time to think about starting a family.\nB. Lao Zhang has been repairing his bike for many years and has a good life. In the past two years, fewer and fewer people have come to repair bicycles, and their income is not as good as before. He has failed to learn how to repair motorcycles several times, and now he can only repair tires for electric cars.\nC. Mr. Lin is busy expanding the scale of his business all day, opening more and more chain stores, and the benefit is getting better and better, but he is neither good at nor concerned about the trivialities of daily life. His wife does all the housework such as shopping, cooking, cleaning and so on.\nD. Wang Shibo is good at Huaiyang cuisine and is well-known in Jiangsu. After arriving in Sichuan, he soon found that he had no opportunity to show his talents. So it took him half a year to finally learn the practice of Sichuan cuisine. Although he was not authentic enough, he was very satisfied.\n",
+    "answer": "B",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Several students from a certain class talked about where they were going during the summer vacation this year. A said, if Zhao Ming hadn't gone to Tibet, he would have gone to Shanghai. B said, Qian Ling went to Nanjing. C said, if Lin Qun didn't go to Xining, then Zhang Hong would go to Hangzhou. Zhao Ming did not go to Tibet, nor did he go to Shanghai, D said.  Qian Ling went to Guangzhou, said Wu.  Ji said, Zhang Hong didn't go to Hangzhou. With hindsight, it was learned that what two people said in this discussion did not tally with the facts.\nQuestion: Based on the above, which of the following options must be true?\nA. Zhao Ming didn't go to Tibet, but he went to Shanghai\nB. Lin Qun went to Xining and Zhao Ming may have gone to Tibet\nC. Qian Ling went to Guangzhou, but not to Nanjing\nD. Zhao Ming didn't go to Shanghai, but Lin Qun went to Xining\n",
+    "answer": "B",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Documentary evidence refers to evidence that corroborates the facts of a case by recording the content or expressing ideas.\nQuestion: According to the above definition, which of the following options is a documentary evidence?\nA. The murderer hit the victim in the head with a thick dictionary\nB. The hospital designated by the judicial organ presents a light injury assessment\nC. The deceased wrote an abbreviation of the killer's name on the ground with blood on his deathbed\nD. A diary left by the victim at the scene of the accident\n",
+    "answer": "B",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Disjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "According to the weather forecast, there are only three kinds of weather this week, namely sunny, rainy and cloudy. It is now known that today is Thursday, sunny. It didn't rain on Monday. It will be cloudy tomorrow. After tomorrow, it will be either rainy or cloudy. There are three sunny days this week.\nQuestion: Which of the following options is wrong?\nA. In order to avoid getting wet in the rain, you only need to take an umbrella out for three days at most this week\nB. If the weather is different on Saturday and Sunday, there are up to three cloudy days this week\nC. The weather can't be the same on Tuesday and Wednesday\nD. If Tuesday is cloudy, Monday is sunny\n",
+    "answer": "C",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Disjunctive Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "The skulls and pelvis of some dinosaurs have the same characteristics as those of all modern birds, but not all dinosaurs have such characteristics. Some scientists claim that all animals with such characteristics are dinosaurs.\nQuestion: According to the above statements and the claims of scientists, can we deduce?\nA. Compared with other animals, birds and dinosaurs have more similarities\nB. Some ancient dinosaurs are no different from modern birds\nC. All dinosaurs are birds\nD. Modern birds are dinosaurs\n",
+    "answer": "D",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Newtonian physics dominated science for over two centuries. It found consistently successful application, becoming one of the most highly substantiated and accepted theories in the history of science. Nevertheless, Einstein' s theories came to show the fundamental limits of Newtonian physics and to surpass the Newtonian view in the early 1900s, giving rise once again to a physics that has so far enjoyed wide success.\nQuestion: Which one of the following logically follows from the statements above?\nA. Long-standing success of substantiation of a theory of physics is no guarantee that the theory will continue to be dominant indefinitely.\nB. If a long-accepted theory of physics is surpassed, it must be surpassed by a theory that is equally successful.\nC. Once a theory of physics is accepted, it will remain dominant for centuries.\nD. Every theory of physics, no matter how successful, is eventually surpassed by one that is more successful.\n",
+    "answer": "A",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Four storekeepers were arraigned on suspicion of theft from a warehouse. Their confessions were as follows: A: none of us committed the crime. B: one of us did it. C: at least one person in B and D did not commit the crime. D: I didn't do it.\nQuestion: If two out of four people are telling the truth and two are lying, which of the following is true?\nA. It's A and C who tell the truth.\nB. It's A and D who tell the truth.\nC. It's B and D who tell the truth.\nD. It's B and C who tell the truth.\n",
+    "answer": "D",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "One way to compare chess-playing programs is to compare how they perform with fixed time limits per move. Given any two computers with which a chess-playing program is compatible, and given fixed time limits per move, such a program will have a better chance of winning on the faster computer. This is simply because the program will be able to examine more possible moves in the time allotted per move.\nQuestion: Which one of the following is most strongly supported by the information above?\nA. If a chess-playing program is run on two different computers and is allotted more time to examine possible moves when running on the slow computer than when running on the fast computer, it will have an equal chance of winning on either computer.\nB. How fast a given computer is has no effect on which chess-playing computer programs can run on that computer.\nC. In general, the more moves a given chess-playing program is able to examine under given time constraints per move, the better the chances that program will win.\nD. If one chess-playing program can examine more possible moves than a different chess-playing program run on the same computer under the same time constraints per move, the former program will have a better chance of winning than the latter.\n",
+    "answer": "C",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "An educational institution conducted a survey on the study habits and Chinese scores of all students in a high school, and found that compared with students who like to do a lot of exercises, students who like to read a lot of extra-curricular materials have better Chinese scores. So it says reading can improve students' language scores more than doing exercises.\nQuestion: Which of the following, if true, best supports the educational institution view?\nA. Chinese examination requires students to read a lot\nB. Students do a lot of exercises because of their poor grades in Chinese\nC. Only students with excellent grades have the time and energy to read extra-curricular readings\nD. Other studies in elementary and middle schools have come to the opposite conclusion\n",
+    "answer": "A",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "When the summer vacation came, four people including father, mother, son and daughter went on a road trip. There are two people in the front row of the car (one as the driver) and two in the back row. Four people have different hobbies: music, sports, photography, calligraphy.The majors are also different:maths, history, logic and physics. It is known that: (1) the son studies physics, (2) the mother loves music, and (3) the photography enthusiast who studies logic sits diagonally with her daughter in two rows.\nQuestion: If the son sits behind the driver, which of the following can be obtained?\nA. Father is a driver\nB. Mother is a driver\nC. Son is a driver\nD. Daughter is a driver\n",
+    "answer": "B",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Professor: if both parents have type O blood, their children's blood type can only be type O. this is the law of heredity. Student: that's not true. My father has type B blood, and I have type O blood.\nQuestion: Which of the following options is most likely to be the student's understanding of the professor's statement?\nA. Only those with type O blood have children with type O blood.\nB. People with type O blood can't have children with type B blood.\nC. People with type B blood will always have children with type O blood.\nD. If both parents have type B blood, their children will also have type B blood.\n",
+    "answer": "A",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "When it comes to social justice, the answer of most people is equal opportunity. When it comes to equality of opportunity, what comes to mind is often the starting line in the arena. As long as we stand on the same starting line, the competition is fair, so no matter what the final result is, it is fair. The question is: what conditions do we have to meet before we can stand on the same starting line? Furthermore, when we use the metaphor of starting line to think about justice, what is the moral imagination behind it?\nQuestion: Which of the following options is the main point of this passage?\nA. The concept of equality of opportunity should not stay on the same starting line.\nB. Only by standing on the same starting line can equal opportunities be achieved.\nC. Equality of opportunity is an effort to ensure a fair starting point and allow competitors to play freely.\nD. The so-called fair starting point is to wipe out all the differences of competitors.\n",
+    "answer": "A",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Seemingly inconsequential changes in sea temperature due to global warming eventually result in declines in fish and seabird populations. A rise of just two degrees prevents the vertical mixing of seawater from different strata. This restricts the availability of upwelling nutrients to phytoplankton. Since zooplankton, which feed upon phytoplankton, feed the rest of the food chain, the declines are inevitable.\nQuestion: Which one of the following most accurately describes the role played in the argument by the statement that zooplankton feed upon phytoplankton?\nA. It helps show how global temperature changes affect larger sea animals indirectly.\nB. It is intended to provide an example of the ways in which the vertical mixing of seawater affects feeding habits.\nC. It is offered in support of the idea that global warming poses a threat to all organisms.\nD. It is offered as one reason that global warming must be curtailed.\n",
+    "answer": "A",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "The service tenet of a daily necessities mall is: Provide you with high-quality services and create your beautiful home.\nQuestion: Which of the following cannot strengthen the above point of view?\nA. Daily necessities are inseparable from building a beautiful home.\nB. People want to create a beautiful home.\nC. Many factors are needed to create a beautiful home.\nD. Quality service helps to create a beautiful home.\n",
+    "answer": "C",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Selena: Asteroid impact on the Earth caused the extinction of the dinosaurs by raising vast clouds of dust, thus blocking the Sun' s rays and cooling the planet beyond the capacity of the dinosaurs, or perhaps the vegetation that supported them, to adapt. A worldwide dust layer provides evidence of asteroid impact at approximately the correct time, and a huge crater exists on the edge of the Yucatan peninsula in Mexico. Trent: That asteroid crater is not large enough for the requisite amount of dust to have been produced. Besides, the extinction of dinosaur species took many years, not just one or two. So the extinctions must have been due not to asteroid impact on the Earth but to some other kind of cause.\nQuestion: Trent's argument assumes that\nA. dinosaurs in the neighborhood of an asteroid impact but not within the zone of direct impact would have survived such an impact\nB. dust from the impact of an asteroid on the Earth would not have had any cooling effect on the climate\nC. no more than one large asteroid struck the Earth during the period when the dinosaurs were becoming extinct\nD. any collision of an asteroid with the Earth would have occurred on a land area rather than an ocean\n",
+    "answer": "C",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Disjunctive Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "Domesticated animals, such as dogs, have come into existence by the breeding of only the individuals of a wild species that are sufficiently tame. For example, if when breeding wolves one breeds only those that display tameness when young, then after a number of generations the offspring will be a species of dog. Ttherefore, all animals can, in principle, be bred for domesticity.\nQuestion: Which one of the following, if true, most weakens the argument?\nA. In some animal species, no members ever display tameness.\nB. Domesticated animals cannot be turned into wild species by breeding only those animals that display some wild characteristics.\nC. In some animal species, wild members mate more frequently than tame members.\nD. In some domesticated animal species, some members are much more tame than other members.\n",
+    "answer": "A",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true
+      },
+      "source": "logiqa2_logic"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Skilled technique or enough time (more than one month) is regarded as necessary conditions to complete a handicraft. Xiao Zhou only took 25 days to complete a handicraft, which shows that Xiao Zhou has mastered skill. Hypothesis: The statement 'Xiao Zhao's salary is not high, but his monthly financial condition is relatively good, indicating that Xiao Zhao is good at financial management' resembles the most to the above.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Disjunctive Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Politician P: My opponent claims that the government is obligated to raise taxes to increase funding for schools and health care. Because raising taxes to increase funding for schools and health care would make taxpayers upset over their loss of buying power, my opponent is simply mistaken. Hypothesis: Politician P's reasoning is questionable because it involves appealing to wholly irrelevant issues to deflect attention away from the real issue.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: A drug that is highly effective in treating many types of infection can, at present, be obtained only from the bark of the ibora, a tree that is quite rare in the wild. It takes the bark of 5, 000 trees to make one kilogram of the drug. It follows, ttherefore, that continued production of the drug must inevitably lead to the ibora's extinction. Hypothesis: The statement 'The ibora can be propagated from cuttings and grown under cultivation' most seriously weakens the argument above.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: If we compare life to a circle in geometry, it is very difficult for you to find out where the starting point is and where the end is on the circle that has been drawn.But if you want to find out how long the radius is, it is easier to find out the original radius, and there is also a radius in life.The width, thickness and post-weight of life is determined by the radius of your life, the larger the radius of life, the greater the space for your life. Hypothesis: The statement 'To measure life, you should first measure what you think, what you say, what you do, and what you do' is the gist of the above.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Many osseous remains have been found in caves with the remains of Pleistocene primates (some people think they are the ancestors of humans). From the frequency of the discovery of various bones, many animals died elsewhere, but only certain parts of the body was brought back to the cave. Therefore, Pleistocene primates must be good at hunting for bring back so many prey. Hypothesis: The statement 'The prints on all bones, including the remains of Pleistocene primates, are the tooth prints of a large carnivore of that era' weakens the above conclusion the most.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Necessary Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: If colleges and universities can hire a large number of graduates who have obtained doctoral degrees from top overseas universities, it will undoubtedly helpful to improve the quality of teaching and scientific research. Therefore, hiring graduates who have obtained doctoral degrees from domestic universities will not help improve the quality of teaching and scientific research. Hypothesis: Graduates, hired by colleges and universities, who have obtained doctoral degrees from top overseas universities are usually jointly cultivated by domestic universities and overseas universities, and they also have doctoral degrees issued by domestic universities will challenge the most to the above view.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: A music producer is recording seven records one after another: F, G, H, J, K, L and M, but it doesn't have to be in this order. When arranging the recording order of these seven records, the following conditions must be met: (l) F must be in the second place. (2) J can not be ranked seventh. (3) G can neither be immediately in front of H nor immediately after H. (4) H must be somewhere in front of L. (5) L must be somewhere in front of M. Hypothesis: If G is immediately in front of H but all other conditions are still valid, J is immediately after L is false.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Subliminal talent refers to the talents that are not recognized, including the unsuccessful talents and the hidden talents. Unsuccessful potential talents are beginning to see results, and no final results have been achieved. Masking sub-talent is already a talent, but the results of creative labor is not recognized by society, or virtue can not be properly evaluated, so buried. Hypothesis: Zhang Qiang's first phase of the trial is good, the company decided that if the second phase can solve the remaining problems, it will consider putting into the market belongs to the unsuccessful dive talent according to the above definition.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Disjunctive Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Technical error refers to the error caused by technical reasons such as slip of tongue, eye or hand in the operation process due to busy business and high work intensity under the premise of compliance with the system. Hypothesis: A few days after an online draw for a Chinese open badminton tournament, the INTERNATIONAL Badminton Federation (BWF) suddenly informed the BWF that the original draw was flawed and the seeded players were incorrectly placed is a technical error according to the above definition.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Disjunctive Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Environmental organizations want to preserve the land surrounding the Wilgrinn Wilderness Area from residential development. They plan to do this by purchasing that land from the farmers who own it. <b> That plan is ill-conceived </b>: if the farmers did sell their land, they would sell it to the highest bidder, and developers would outbid any other bidders. On the other hand, these farmers will never actually sell any of the land, provided that farming it remains viable. But farming will not remain viable if the farms are left unmodernized, and most of the farmers lack the financial resources modernization requires. And that is exactly why <b> a more sensible preservation strategy would be to the farmers to modernize their farms to the extent needed to maintain viability </b>. Hypothesis: The first boldface portion is the main conclusion toward which the reasoning is directed and the second boldface portion is a consideration raised in order to support that conclusion in the reasoning above.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: At present, there is no mainstream channel for the supply of low-rent housing in China, and many functions of low-cost leased housing are undertaken by informal villages in the city. In recent years, the gap between the urban development of the south and the north is getting wider and wider. In the study of explaining this phenomenon, the proportion of the village in the city to the whole urban built-up area should be a very explanatory variable. In the south, there are many  villages in the city of the semi-illegal , which make the availability of low-cost rentable housing much higher than that in northern cities. It is these low-rent housing that enable  manufacturing with meagre profits to survive in big cities where land prices are expensive. Hypothesis: The development of manufacturing industry in southern cities is closely related to the supply of low-rent housing is the most important part of this passage.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessary Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: All dinosaurs stood on the ground with their legs upright, which is different from cold-blooded reptiles lying on the ground with their limbs; The bone structure of dinosaurs is similar to that of warm blooded mammals; The lung structure of dinosaurs is very similar to that of warm blooded animals; In modern ecosystems (such as African grasslands), the ratio between warm-blooded predators (such as lions) and predators (such as antelopes) is a constant. Statistics of dinosaur fauna in North America show that the ratio between predators and predators is similar to this constant. All these show that dinosaurs are not dull and slow-moving cold-blooded animals, It is a warm blooded animal with high metabolism and quick action. Hypothesis: The main difference in physiological structure between cold-blooded animals and warm-blooded animals lies in the structure of the heart rather than the structure of the lungs cannot refute the above reasoning.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: During the National Games, there are 8 athletes living in building F. among them, one is from Heilongjiang, two are from the north, one is from Guangdong, two are track and field athletes, and three are main athletes. The above statistics involve all 8 athletes in building F. Hypothesis: The statement 'The main players are southerners' contradicts the information stated in the stem.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: In order to avoid predators and the hot sun, many migratory birds choose to fly at night when they migrate. When they have to fly over some natural geographical barriers such as the Gulf of Mexico, they even fly endlessly for 24 hours. Like humans, long-term lack of sleep can make birds extremely tired and less flexible, which inevitably leads to greater risk when they take a break. However, a new study shows that migratory birds have a clever solution. The scientists observed seven captured Sven's night thrushes and found that the migratory birds that used to fly at night were not completely relaxed during the day and usually had one eye open. Brain waves also showed that only half of their brains were in a standard dormant state. Hypothesis: The most suitable title for this passage is \"Your night, my day.\"",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Acronyms refer to the different names of the same thing in different social groups, different regions or different times. Hypothesis: Now salesmen often call female customers beautiful women is not a acronym according to the above definition.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Disjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Reactive interdependence means that in the communication process, both sides of the communication use the other's behavior as the basis for their own behavior and make corresponding responses instead of communicating according to the original plan. Hypothesis: According to the above definition, Xiao He's plan to study abroad for a doctoral degree is reactive interdependence.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Sewage treatment consumes a lot of electricity. Researchers at a university in the United States recently developed a new microbial battery technology that increases the efficiency of sewage to produce electricity by 10 to 50 times. Using this technology, sewage treatment plants can not only achieve self-sufficiency in electricity, but also sell the surplus electricity. It can be expected that once this technology is put into commercial operation, the attitude of enterprises towards sewage treatment will become proactive, so as to reduce the environmental pollution caused by sewage discharge. Hypothesis: The answer to the question 'Will the cost of technology transfer and equipment for sewage treatment in this way be very high?' is most relevant to the assessment of the above judgment.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: If colleges and universities can hire a large number of graduates who have obtained doctoral degrees from top overseas universities, it will undoubtedly helpful to improve the quality of teaching and scientific research. Therefore, hiring graduates who have obtained doctoral degrees from domestic universities will not help improve the quality of teaching and scientific research. Hypothesis: Graduates who have obtained a doctoral degree from a top overseas university are more willing to stay overseas for employment, and tend to work in foreign companies even after returning to China will challenge the most to the above view.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Kimmy is a world famous actress. Millions of people downloaded her leaked movie co-starring her previous boyfriend. Kimmy earns millions through her television show and marketing appearances. There' s little wonder that paparazzi track her every move. Hypothesis: The primary purpose of the argument is to establish that Kimmy is a highly compensated and extremely popular television and movie actress.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: After reading a large number of biographies of poets in the Tang Dynasty, I found that most of the poets before the Mid-Tang Dynasty were arrogant. Du Fu was supposed to be a warm and careful person, but he boasted unequivocally: when I was young, I had already served as a guest to visit the king's capital. However, as a matter of fact, du Fu had never been a high-ranking official in his life, how could he be invited by the emperor to visit Wangdu? As long as you read a lot of books carefully, you will be very good at writing articles.  Li Bai's I was originally a madman of the State of Chu, singing Phoenix songs and laughing at Kong Qiu, I look up to the sky and laugh when I go out.how can I grovel to serve the rich and powerful, so that I can't have a comfortable smile? Everyone is familiar with these. the emperor visited the lake and called him to write a preface to the poem. He refused to board the boat because he was drunk and claimed to be the fairy of wine. Although this sentence is written by du Fu, it can be called a bosom friend in Li Bai's personality. Hypothesis: The author's arrogant attitude towards Li du's poems is that they appreciate them very much.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: The only songs Amanda has ever written are blues songs and punk rock songs. Most punk rock songs involve no more than three chords. So if the next song Amanda writes is not a blues song, it probably will not involve more than three chords. Hypothesis: The reasoning in the argument that the next pet the Gupta family owns will probably be very noisy if it is not a fish is most similar to the reasoning in the argument that if the next pet the Gupta family owns is a parrot, it will probably be very noisy.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Disjunctive Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: In defending the Hyperion School of Journalism from charges that its program is of little or no value to its students, the dean of the school pointed to its recent success in placing students: 65 percent of its graduates went on to internships or jobs in print or broadcast journalism. Hypothesis: The statement \"Some newspaper editors do not regard journalism schools as a necessary part of the training of a journalist\" most seriously undermines the defense offered by the dean.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Necessry Condtional Reasoning": true,
+        "Disjunctive Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Butterfly is a very beautiful insect and there are about 14000 species. Most of the species are distributed in Africa, especially in the Amazon River basin, and are distributed in other parts of the world except in the cold regions of the north and south. Taiwan is also famous for its many species of butterflies in Asia. Butterflies generally have brightly colored wings, various patterns on their wings and bodies, and a bunch of rod-shaped or hammered antennae on their heads. The largest butterfly has wings up to 24 centimeters, while the smallest butterfly has only 1.6 centimeters. Hypothesis: Based on the above statement, it can be inferred that there are many kinds of butterflies, so there are many kinds of insects.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Disjunctive Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: Differential competition means that many enterprises in the same industry adopt flexible and personalized means to establish a good corporate image and win the market in the short-term fierce competition. Hypothesis: In the general depressed environment of physical bookstores, a bookstore located in a busy neighborhood has always maintained its market positioning and committed to selling high-grade professional books. It has become a local cultural landmark belongs to differential competition.",
+    "answer": "not-entailment",
+    "meta_data": {
+      "category": {
+        "Sufficient Conditional Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  },
+  {
+    "prompt": "You are given a premise and a hypothesis. Decide whether the hypothesis logically follows from the premise. Premise: With the rising price of oil, some countries use microorganisms to ferment sugar cane, sugar beet and cassava into alcohol to replace oil. This alcohol has the characteristics of complete combustion, high efficiency and no pollution. It can be used to dilute gasoline to obtain ethanol gasoline. For example, Brazil has refitted dozens of cars to use ethanol gasoline or alcohol as fuel, greatly reducing air pollution. Hypothesis: Rising fuel prices affect the automotive industry is correct according to the above.",
+    "answer": "entailment",
+    "meta_data": {
+      "category": {
+        "Categorical Reasoning": true,
+        "Sufficient Conditional Reasoning": true,
+        "Disjunctive Reasoning": true,
+        "Conjunctive Reasoning": true
+      },
+      "source": "logiqa2_nli"
+    }
+  }
+]
